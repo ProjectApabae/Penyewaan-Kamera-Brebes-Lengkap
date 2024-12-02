@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Kamera Brebes Lengkap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .navbar {
+            background-color: #454242;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #3c2f2f;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .menu-item {
+            background-color: #fff;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .menu-item h3 {
+            color: #3c2f2f;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        form input, form select {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #3c2f2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #5a4949;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Sewa Kamera Brebes Lengkap</h1>
+        <p>Tempat terbaik untuk Sewa Kamera berbagai tipe kamera,lensa,dan Flash.</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#menu">Produk</a>
+        <a href=>Formulir</a>
+    </nav>
+
+    <div class="container">
+        <section id="menu">
+            <h2>Produk Kami</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="500.jpeg" alt="Kamera Canon 500D">
+                    <h3>Canon 500D</h3>
+                    <p>Rp 80.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="550.jpeg" alt="Kamera Canon 550D">
+                    <h3>Canon 550D</h3>
+                    <p>Rp 85.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="1100.jpeg" alt="Kamera Canon 1100D">
+                    <h3>Canon 1100D</h3>
+                    <p>Rp 70.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="1200.jpeg" alt="Kamera Canon 1200D">
+                    <h3>Canon 1200D</h3>
+                    <p>Rp 85.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="600.jpeg" alt="Kamera Canon 600D">
+                    <h3>Canon 600D</h3>
+                    <p>Rp 100.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="60.jpeg" alt="Kamera Canon 60D">
+                    <h3>Canon 60D</h3>
+                    <p>Rp 100.000</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formulir Pemesanan</h2>
+            <form action="konfirmasi menu.html" method="GET">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                
+                <label for="pesanan">Pilih Menu:</label>
+                <select id="pesanan" name="pesanan">
+                    <option value="Kamera Canon 500D">Canon 500D - Rp 80.000</option>
+                    <option value="Kamera Canon 550D">Canon 550D - Rp 85.000</option>
+                    <option value="Kamera Canon 1100D">Canon 1100D - Rp 70.000</option>
+                    <option value="Kamera Canon 1200D">Canon 1200D - Rp 85.000</option>
+                    <option value="Kamera Canon 600D">Canon 600D - Rp 100.000</option>
+                    <option value="Kamera Canon 60D">Canon 60D - Rp 100.000</option>
+                </select>
+                
+                <a href="branda.html">Kembali</a>
+                <button type="submit" onclick="history.back()">Pesan Sekarang</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Pesanan - Sewa Kamera Brebes Lengkap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #3c2f2f;
+        }
+        .order-details {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .order-details p {
+            margin: 8px 0;
+            color: #333;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        .button-group a {
+            background-color: #3c2f2f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nota Pesanan</h1>
+        <p>Terima kasih atas pesanan Anda! Berikut adalah detail pesanan Anda:</p>
+        
+        <div class="order-details">
+            <p><strong>Nama:</strong> <span id="customerName"></span></p>
+            <p><strong>Email:</strong> <span id="customerEmail"></span></p>
+            <p><strong>Pesanan:</strong> <span id="customerOrder"></span></p>
+            <p><strong>Total Harga:</strong> <span id="totalPrice"></span></p>
+            <p><strong>Metode Pembayaran:</strong> Bayar di Tempat</p>
+            <p><strong>Sewa jam/hari:</strong> 24Jam</p>
+        </div>
+
+        <div class="button-group">
+            <a href="branda.html">Kembali ke Beranda</a>
+            <a href="new 1.html">Pesan Lagi</a>
+        </div>
+    </div>
+
+    <script>
+        // Function to retrieve URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Set customer details
+        document.getElementById("customerName").textContent = getQueryParam("nama") || "[Nama tidak tersedia]";
+        document.getElementById("customerEmail").textContent = getQueryParam("email") || "[Email tidak tersedia]";
+        document.getElementById("customerOrder").textContent = getQueryParam("pesanan") || "[Pesanan tidak tersedia]";
+
+        // Set total price based on selected item
+        const orderPrices = {
+            "Kamera Canon 500D": "Rp 80.000",
+            "Kamera Canon 550D": "Rp 85.000",
+            "Kamera Canon 110D": "Rp 70.000",
+            "Kamera Canon 1200Da": "Rp 85.000",
+            "Kamera Canon 600D": "Rp 100.000",
+            "Kamera Canon 60D": "Rp 100.000"
+        };
+        const order = getQueryParam("pesanan");
+        document.getElementById("totalPrice").textContent = orderPrices[order] || "[Harga tidak tersedia]";
+    </script>
+</body>
+</html>
